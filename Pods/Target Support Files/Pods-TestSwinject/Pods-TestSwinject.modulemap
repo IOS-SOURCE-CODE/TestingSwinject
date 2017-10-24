@@ -1,0 +1,6 @@
+framework module Pods_TestSwinject {
+  umbrella header "Pods-TestSwinject-umbrella.h"
+
+  export *
+  module * { export * }
+}
