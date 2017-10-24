@@ -16,11 +16,12 @@ extension SwinjectStoryboard {
         
         if AppDelegate.dependencyRegistry == nil {
             
-            AppDelegate.dependencyRegistry = DependencyRegistryImpl(container: SwinjectStoryboard.defaultContainer)
+            AppDelegate.dependencyRegistry = DependencyRegistryImpl(container: self.defaultContainer)
         }
         
         let dependencyRegistry: DependencyRegistry = AppDelegate.dependencyRegistry
         
+        Container.loggingFunction = nil
         
         func main() {
             
